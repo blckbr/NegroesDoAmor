@@ -70,8 +70,10 @@ Você precisa ter esse repositório, é simples, rode os comandos abaixo, em cas
 
 ```bash
 > git clone https://github.com/blckbr/NegroesDoAmor.git
-> cd iris
+> cd NegroesDoAmor
 > npm i
+ OU
+> git clone https://github.com/blckbr/NegroesDoAmor.git && cd NegroesDoAmor && npm i
 ```
 
 ### Mudanças OBRIGATÓRIAS
