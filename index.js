@@ -7,7 +7,7 @@ const config = require('./lib/config/Bot/config.json')
 const canvas = require('discord-canvas')
 const { mylang } = require('./lib/lang')
 const axios = require('axios')
-const irisvs = require('./package.json')
+const NegroesDoAmorvs = require('./package.json')
 var welcOn = 0;var abayo = 0
 
 // Quantidade máxima de Backups do Level.json e MsgCount.json
@@ -18,9 +18,9 @@ if (fs.existsSync('./logs/Chrome')) { fs.rmdirSync('./logs/Chrome', { recursive:
 
 // Cria um cliente de inicialização da BOT
 const start = async (kill = new Client()) => {
-	const getversion = await axios.get('https://raw.githubusercontent.com/KillovSky/iris/main/package.json')
-	if (irisvs.version !== getversion.data.version) { console.log(color('\n[UPDATE]', 'crimson'), color(`Uma nova versão da Íris foi lançada [${getversion.data.version}], atualize para obter melhorias e correções! → ${irisvs.homepage}`, 'gold')) }
-	console.log(color('\n[SUPORTE]', 'magenta'), color(`https://bit.ly/3owVJoB | +55 18 99804-4132 | ${irisvs.bugs.url}\n`, 'lime'), color(`\n[ÍRIS ${irisvs.version}]`, 'magenta'), color('Estamos prontos para começar mestre!\n', 'lime'))
+	const getversion = await axios.get('https://raw.githubusercontent.com/blckbr/NegroesDoAmor/main/package.json')
+	if (NegroesDoAmorvs.version !== getversion.data.version) { console.log(color('\n[UPDATE]', 'crimson'), color(`Uma nova versão dos Negrões Do Amor foi lançada [${getversion.data.version}], atualize para obter melhorias e correções! → ${NegroesDoAmorvs.homepage}`, 'gold')) }
+	console.log(color('\n[SUPORTE]', 'magenta'), color(`https://bit.ly/3owVJoB | +55 18 99804-4132 | ${NegroesDoAmorvs.bugs.url}\n`, 'lime'), color(`\n[Negrões Do Amor ${NegroesDoAmorvs.version}]`, 'magenta'), color('Estamos prontos para começar mestre!\n', 'lime'))
 	
 	// Backup do Level.json & MsgCount.json toda vez que religar a BOT
 	const levelBk = JSON.parse(fs.readFileSync('./lib/config/Bot/level.json'))
