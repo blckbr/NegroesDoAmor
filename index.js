@@ -7,7 +7,7 @@ const config = require('./lib/config/Bot/config.json')
 const canvas = require('discord-canvas')
 const { mylang } = require('./lib/lang')
 const axios = require('axios')
-const NegroesDoAmorvs = require('./package.json')
+const irisvs = require('./package.json')
 var welcOn = 0;var abayo = 0
 
 // Quantidade máxima de Backups do Level.json e MsgCount.json
